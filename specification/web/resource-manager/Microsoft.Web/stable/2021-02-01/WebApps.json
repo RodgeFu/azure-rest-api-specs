@@ -23135,13 +23135,19 @@
       "description": "Function key info.",
       "type": "object",
       "properties": {
-        "name": {
-          "description": "Key name",
-          "type": "string"
-        },
-        "value": {
-          "description": "Key value",
-          "type": "string"
+        "properties":{
+          "description": "Properties of function key info.",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Key name",
+              "type": "string"
+            },
+            "value": {
+              "description": "Key value",
+              "type": "string"
+            }
+          }
         }
       }
     },
