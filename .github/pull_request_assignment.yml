@@ -1,0 +1,232 @@
+---
+- rule:
+    # translator data-plane PR
+    paths:
+      - "specification/cognitiveservices/data-plane/TranslatorText/**"
+    reviewers:
+      - kristapratico
+      
+- rule:
+    # Cognitive Services - Language pillar data-plane PR
+    paths:
+      - "specification/cognitiveservices/data-plane/Language/**"
+    reviewers:
+      - kristapratico
+      - heaths
+      
+- rule:
+    # Key Vault data-plane PR
+    paths:
+      - "specification/keyvault/data-plane/**"
+    reviewers:
+      - heaths
+
+- rule:
+    paths:
+      - "specification/confidentialledger/data-plane/**"
+    reviewers:
+      - christothes 
+
+- rule:
+    # eventgrid data-plane PR
+    paths:
+      - "specification/eventgrid/data-plane/**"
+    reviewers:
+      - lmazuel
+      
+- rule:
+    # storage data-plane PR
+    paths:
+      - "specification/storage/data-plane/**"
+    reviewers:
+      - tg-msft
+
+- rule:
+    # synapse data-plane PR
+    paths:
+      - "specification/synapse/data-plane/**"
+    reviewers:
+      - lmazuel
+
+- rule:
+    # data-plane PR
+    paths:
+      - "specification/**/data-plane/iot**"
+    reviewers:
+      - drwill-ms
+
+- rule:
+    # data-plane PR
+    paths:
+      - "specification/**/data-plane/**"
+      - "dev/**/data-plane/**"
+    reviewers:
+      - anuchandy
+      - jhendrixMSFT
+      - tjprescott
+
+- rule:
+    paths:
+      - "specification/**/*Management/**/*.cadl"
+      - "specification/**/*Management.Shared/**/*.cadl"
+      - "specification/**/resource-management/**/*.cadl"
+      - "specification/**/*Management/**/*.tsp"
+      - "specification/**/*Management.Shared/**/*.tsp"
+      - "specification/**/resource-management/**/*.tsp"
+    reviewers:
+      - raych1
+      - lirenhe
+      - weidongxu-microsoft
+      - ArcturusZhang
+      - chunyu3
+      - msyyc
+      - live1206
+      - tadelesh
+      - haolingdong-msft
+      - XiaofeiCao
+      - MaryGao
+
+- rule:
+    paths:
+        - "specification/**/*.cadl"
+        - "specification/**/*.tsp"
+    reviewers:
+        - anuchandy
+        - jhendrixMSFT
+        - tjprescott
+        
+
+- rule:
+    paths:
+      - "specification/network/**"
+    reviewers:
+      - lirenhe
+      - raych1
+    branches:
+      - network-
+
+
+- rule:
+    paths: "specification/common-types/**"
+    reviewers:
+      - raych1
+      - weidongxu-microsoft
+      - lirenhe
+   
+      
+- rule:
+    paths: "specification/providerhub/**"
+    reviewers:
+      - raych1
+
+- rule:
+    paths: "specification/sql/**"
+    reviewers:
+      - raych1
+    branches:
+      - dev-sql-
+
+- rule:
+    paths: "specification/@(financialdataservices|standbypool)/**"
+    reviewers:
+      - live1206
+    branches:
+      - RPSaaSDev
+
+- rule:
+    paths: "specification/compute/**"
+    reviewers:
+      - ArcturusZhang
+
+- rule:
+    paths:
+      - "specification/machinelearningservices/**"
+    reviewers:
+      - ArcturusZhang
+
+- rule:
+    paths:
+      - "specification/monitor/**"
+    reviewers:
+      - ArcturusZhang
+
+- rule:
+    paths:
+      - "specification/@(azurestackhci|security)/**"
+    reviewers:
+      - chunyu3
+
+- rule:
+    paths:
+      - "specification/@(web|app)/**"
+    reviewers:
+      - weidongxu-microsoft
+
+- rule:
+    paths: "specification/@(synapse|azurearcdata)/**"
+    reviewers:
+      - msyyc
+
+- rule:
+    paths: "specification/@(workloads|apimanagement)/**"
+    reviewers:
+      - live1206
+
+- rule:
+    paths: "specification/@(securityinsights|impact)/**"
+    reviewers:
+      - tadelesh
+
+- rule:
+    paths: "specification/@(appcomplianceautomation|hybridnetwork)/**"
+    reviewers:
+      - haolingdong-msft
+
+#- rule:
+ #   paths: "specification/@(cost-management|hybridconnectivity)/**"
+ #   reviewers:
+ #     - archerzz
+
+- rule:
+    paths: "specification/@(billing|resources)/**"
+    reviewers:
+      - XiaofeiCao
+
+- rule:
+    paths: "specification/@(testbase|appplatform)/**"
+    reviewers:
+      - MaryGao
+
+- rule:
+    paths:
+      - "documentation/**"
+    reviewers:
+      - josefree
+      - weshaggard
+
+
+- rule:
+    paths:
+      - ".github/**"	
+      - "**/azure-pipelines.yml"	
+      - ".azure-pipelines/**"	
+      - ".azure-pipelines-preproduction/**"	
+    reviewers:
+      - weshaggard
+      - konrad-jamrozik
+
+- rule:
+    # manager-plane PR
+    paths:
+      - "**"
+    reviewers:
+      - lirenhe
+      - weidongxu-microsoft
+      - ArcturusZhang
+      - chunyu3
+      - msyyc
+      - live1206
+      - tadelesh
+      - haolingdong-msft
+      - XiaofeiCao
+      - MaryGao
