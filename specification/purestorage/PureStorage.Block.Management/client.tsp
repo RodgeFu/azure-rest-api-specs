@@ -67,10 +67,7 @@ using PureStorage.Block;
 @@clientName(Alert, "PureStorageHealthAlert", "csharp");
 @@clientName(AlertLevel, "PureStorageHealthAlertLevel", "csharp");
 @@clientName(AvsConnection, "PureStorageAvsConnection", "csharp");
-@@clientName(AvsConnection.serviceInitializationCompleted,
-  "IsServiceInitializationCompleted",
-  "csharp"
-);
+
 @@clientName(AvsDiskDetails, "PureStorageAvsDiskDetails", "csharp");
 @@alternateType(AvsDiskDetails.avsVmResourceId,
   armResourceIdentifier,
@@ -81,11 +78,9 @@ using PureStorage.Block;
   "csharp"
 );
 @@clientName(AvsStatus, "PureStorageAvsStatus", "csharp");
-@@clientName(AvsStatus.avsEnabled, "IsAvsEnabled", "csharp");
 @@alternateType(AvsStatus.sddcResourceId, armResourceIdentifier, "csharp");
 @@clientName(AvsVmDetails, "PureStorageAvsVmDetails", "csharp");
 @@clientName(AzureVmwareService, "PureStorageAvs", "csharp");
-@@clientName(AzureVmwareService.avsEnabled, "IsAvsEnabled", "csharp");
 @@alternateType(AzureVmwareService.sddcResourceId,
   armResourceIdentifier,
   "csharp"
@@ -116,7 +111,6 @@ using PureStorage.Block;
 ); // TODO: this will be removed after the tsp get fixed
 @@clientName(RangeLimits, "PropertyValueRangeLimits", "csharp");
 @@clientName(SoftDeletion, "PureStorageSoftDeletionState", "csharp");
-@@clientName(SoftDeletion.destroyed, "IsDestroyed", "csharp");
 @@clientName(SoftDeletion.eradicationTimestamp, "EradicatedOn", "csharp");
 @@alternateType(SoftDeletion.eradicationTimestamp, utcDateTime, "csharp");
 @@clientName(Space, "PureStorageSpaceUsage", "csharp");
