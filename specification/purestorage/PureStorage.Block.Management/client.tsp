@@ -132,3 +132,10 @@ using PureStorage.Block;
   "csharp"
 );
 @@clientName(VolumeType, "PureStorageAvsVmVolumeType", "csharp");
+
+// Boolean property naming rules
+@@clientName(AzureVmwareService.avsEnabled, "IsAvsEnabled", "csharp");
+@@clientName(AvsConnection.serviceInitializationCompleted, "IsServiceInitializationCompleted", "csharp");
+@@clientName(AvsStorageContainerProperties.mounted, "IsMounted", "csharp");
+@@clientName(AvsStatus.avsEnabled, "IsAvsEnabled", "csharp");
+@@clientName(SoftDeletion.destroyed, "IsDestroyed", "csharp");
