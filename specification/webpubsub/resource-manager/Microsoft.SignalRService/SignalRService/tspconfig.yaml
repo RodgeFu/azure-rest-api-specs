@@ -48,6 +48,12 @@ options:
     generate-fakes: true
     head-as-boolean: true
     inject-spans: true
+  "@azure-tools/typespec-ts-provisioning":
+    emitter-output-dir: "{output-dir}/{service-dir}/provisioning-webpubsub"
+    generate-test: true
+    package-details:
+      name: "@azure/provisioning-webpubsub"
+    api-version: "2025-12-01-preview"
 linter:
   extends:
     - "@azure-tools/typespec-azure-rulesets/resource-manager"
